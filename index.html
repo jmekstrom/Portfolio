@@ -1,286 +1,778 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	<title>Jason Ekstrom - Portfolio</title>
 
-    <title>Jason Ekstrom - Web Developer</title>
+	<!-- CSS -->
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<!-- Owl Carousel -->
+	<link href="assets/css/owl.theme.css" rel="stylesheet">
+	<link href="assets/css/owl.carousel.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+	<!-- Magnific-popup lightbox -->
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+	<!-- Simple text rotator -->
+	<link href="assets/css/simpletextrotator.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
+	<!-- Font Awesome CSS -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style>
+	<!-- Animate css -->
+	<link href="assets/css/animate.css" rel="stylesheet">
 
-
-    </style>
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
 </head>
+<body>
 
-<body id="page-top">
+	<div class="wrapper">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-            </div>
+		<!-- Preloader -->
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+		<div id="preloader">
+			<div id="status">
+				<div class="status-mes"><h4>Jason Ekstrom</h4></div>
+			</div>
+		</div>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Jason Ekstrom</h1>
-                <hr>
-                <p>I can help you build better websites!</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
-            </div>
-        </div>
-    </header>
+		<!-- Navigation start -->
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
-                </div>
-            </div>
-        </div>
-    </section>
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+			<div class="container">
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Jason Ekstrom</a>
+				</div>
 
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://jmekstrom.github.io/c5_memory_match" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Games
-                                </div>
-                                <div class="project-name">
-                                    Memory Roaster
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://jmekstrom.github.io/c5_calculator/" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Javascript/jQuery
-                                </div>
-                                <div class="project-name">
-                                    Calculator
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="http://toboboto.github.io/smackDown/" class="portfolio-box">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Hackathon
-                                </div>
-                                <div class="project-name">
-                                    Ultimate Fan Page
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#intro">Home</a></li>
+						<li><a href="#profile">Profile</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#resume">Resume</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Contact me right now!</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada">Contact</a>
-            </div>
-        </div>
-    </aside>
+			</div>
+		</nav>
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with me?  Give me a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>714-306-2028</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:jmekstrom@gmail.com">jmekstrom@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- Navigation end -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+		<!-- Intro section start -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+		<section id="intro" class="section">
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
+			<div class="container">
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
+				<div class="row">
+
+					<div class="col-md-12">
+
+						<div class="hello wow bounceInDown">
+							<h1>Hello, I'm Jason Ekstrom</h1>
+							<h3><span class="rotate">Visual Designer. | Front-end Developer. | Programmer.</span></h3>
+						</div>
+
+						<a href="#profile">
+							<div class="mouse-icon">
+								<div class="wheel"></div>
+							</div>
+						</a>
+
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Intro section end -->
+
+		<!-- Profile contact callout section -->
+
+		<section id="profile-contact">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-4 wow bounceInLeft">
+						<div class="profile-item">
+							<i class="fa fa-envelope-o"></i>
+							<h5><a href="#">jmekstrom@gmail.com</a></h5>
+						</div>
+					</div>
+
+					<div class="col-sm-4 wow bounceInUp">
+						<div class="profile-item">
+							<i class="fa fa-phone"></i>
+							<h5>(714) 306-2028</h5>
+						</div>
+					</div>
+
+					<div class="col-sm-4 wow bounceInRight">
+						<div class="profile-item">
+							<i class="fa fa-map-marker"></i>
+							<h5>3008 Sequoia Ave, Fullerton, CA 92835</h5>
+						</div>
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Profile contact callout section -->
+
+		<!-- Profile section start -->
+
+		<section id="profile" class="section">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 headline wow bounceInDown">
+						<h2>Jason Ekstrom</h2>
+						<p>Visual Designer. Front-end Developer. Programmer.</p>
+					</div>
+
+					<div class="col-md-3 col-sm-6 hidden-xs wow bounceInLeft">
+						<img class="avatar" src="assets/images/photo.jpg" alt="">
+					</div>
+
+					<div class="col-md-3 col-sm-6 wow bounceInUp">
+
+						<div class="profile-widget">
+							<h3>Skillset</h3>
+
+							<h5>UX Design</h5>
+							<div class="skill-bar">
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-off"></div>
+							</div>
+
+							<h5>HTML5 / CSS3 / Bootstrap</h5>
+							<div class="skill-bar">
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-off"></div>
+								<div class="skill-rate-off"></div>
+							</div>
+
+							<h5>Javascript / jQuery / Ajax</h5>
+							<div class="skill-bar">
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-on"></div>
+							</div>
+
+							<h5>PHP / mySQL</h5>
+							<div class="skill-bar">
+								<div class="skill-rate-on"></div>
+								<div class="skill-rate-off"></div>
+								<div class="skill-rate-off"></div>
+								<div class="skill-rate-off"></div>
+							</div>
+						</div>
+
+						<div class="profile-widget">
+							<h3>Social Profiles</h3>
+							<ul class="widget-social">
+								<li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+								<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+
+					</div><!-- .col-md-3 -->
+
+					<div class="col-md-6 col-sm-12 wow bounceInRight">
+						<h3>Profesional Profile</h3>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am so happy, my dear friend.</p>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Profile section end -->
+
+		<!-- Callout section start -->
+
+		<section id="stats" class="callout">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-3 col-sm-12 hidden-xs wow bounceInLeft">
+						<h3>My Stats</h3>
+					</div>
+
+					<div class="col-md-3 col-sm-4 wow bounceInDown">
+						<div class="stat">
+							<div class="stat-icon">
+								<h2><i class="fa fa-coffee hidden-xs"></i><span class="timer" data-to="32"></span></h2>
+							</div>
+							<h3>Cup of coffee</h3>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 wow bounceInUp">
+						<div class="stat">
+							<div class="stat-icon">
+								<h2><i class="fa fa-code hidden-xs"></i><span class="timer" data-to="999"></span></h2>
+							</div>
+							<h3>Line of code</h3>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-4 wow bounceInRight">
+						<div class="stat">
+							<div class="stat-icon">
+								<h2><i class="fa fa-child hidden-xs"></i><span class="timer" data-to="300"></span>+</h2>
+							</div>
+							<h3>Happy customers</h3>
+						</div>
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Callout section end -->
+
+		<!-- Services section start -->
+
+		<section id="services" class="section">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 headline wow bounceInDown">
+						<h2>What i can do</h2>
+						<p>My Services.</p>
+					</div>
+
+					<div class="col-md-12">
+
+						<div class="row">
+
+							<div class="col-sm-4 wow bounceInLeft">
+								<div class="service">
+									<div class="icon">
+										<i class="fa fa-pencil"></i>
+									</div>
+									<h4>Text rotator</h4>
+									<div class="text">
+										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-4 wow bounceInUp">
+								<div class="service">
+									<div class="icon">
+										<i class="fa fa-image"></i>
+									</div>
+									<h4>Slideshow</h4>
+									<div class="text">
+										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-4 wow bounceInRight">
+								<div class="service">
+									<div class="icon">
+										<i class="fa fa-cog"></i>
+									</div>
+									<h4>Easy configure</h4>
+									<div class="text">
+										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+									</div>
+								</div>
+							</div>
+
+						</div><!-- .row -->
+
+						<div class="row">
+
+							<div class="col-sm-4 wow bounceInUp" data-wow-delay=".2s">
+								<div class="service">
+									<div class="icon">
+										<i class="fa fa-code"></i>
+									</div>
+									<h4>Clear code</h4>
+									<div class="text">
+										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-4 wow bounceInUp" data-wow-delay=".4s">
+								<div class="service">
+									<div class="icon">
+										<i class="fa fa-desktop"></i>
+									</div>
+									<h4>Responsive design</h4>
+									<div class="text">
+										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-4 wow bounceInUp" data-wow-delay=".6s">
+								<div class="service">
+									<div class="icon">
+										<i class="fa fa-life-ring"></i>
+									</div>
+									<h4>Support</h4>
+									<div class="text">
+										<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+									</div>
+								</div>
+							</div>
+
+						</div><!-- .row -->
+
+					</div><!-- .col-md-12 -->
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Services section end -->
+
+		<!-- Callout section start -->
+
+		<section class="callout">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-3 hidden-xs wow bounceInLeft">
+						<h3>My status</h3>
+					</div>
+
+					<div class="col-md-9 headline nomargin wow bounceInDown">
+						<h3>I'm currently available for freelance work.</h3>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+						<a href="#contact" class="btn btn-default btn-custom-2 callout-btn"><i class="fa fa-paper-plane-o icon-before"></i> Contact me</a>
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Callout section end -->
+
+		<!-- Resume section start -->
+
+		<section id="resume" class="section">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 headline wow bounceInDown">
+						<h2>Resume</h2>
+						<p>My education and experience.</p>
+					</div>
+
+				</div><!-- .row -->
+
+				<div class="row resume-items">
+
+					<div class="col-md-3 wow bounceInLeft">
+						<h3>Education</h3>
+					</div>
+
+					<div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
+						<h4>Web Development Bootcamp</h4>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+						<hr class="hidden-xs">
+					</div>
+
+					<div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+						<h4><i class="fa fa-suitcase"></i>LearningFuze, Irvine CA</h4>
+						<i class="fa fa-calendar"></i> June 2015 - Sep 2015
+						<hr class="visible-xs">
+					</div>
+
+					<div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
+						<h4>Electrical Engineering</h4>
+						<p>I have a BS in Electrical Engineering with an empasis in controls and robotics</p>
+						<hr class="hidden-xs">
+					</div>
+
+					<div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+						<h4><i class="fa fa-suitcase"></i>Cal Poly Pomona</h4>
+						<i class="fa fa-calendar"></i> 2008 - 2011
+						<hr class="visible-xs">
+					</div>
+
+				</div><!-- .row -->
+
+				<div class="row resume-items">
+
+					<div class="col-md-3 wow bounceInLeft">
+						<h3>Experience</h3>
+					</div>
+
+					<div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
+						<h4>Front-end developer / php programmer</h4>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+						<hr class="hidden-xs">
+					</div>
+
+					<div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+						<h4><i class="fa fa-suitcase"></i> Google</h4>
+						<i class="fa fa-calendar"></i> 2013 - 2014
+						<hr class="visible-xs">
+					</div>
+
+					<div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
+						<h4>C# programmer</h4>
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+						<hr class="hidden-xs">
+					</div>
+
+					<div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+						<h4><i class="fa fa-suitcase"></i> Microsoft</h4>
+						<i class="fa fa-calendar"></i> 2013 - 2014
+						<hr class="visible-xs">
+					</div>
+
+				</div><!-- .row -->
+
+				<div class="row row-grid">
+
+					<div style="margin-top:10px" class="col-md-3 col-md-offset-3 wow bounceInUp">
+						<a href="resume/Resume_9-1-15.doc" class="btn btn-default btn-custom-2" download><i class="fa fa-cloud-download icon-before"></i> Download DOC</a>
+					</div>
+					<div style="margin-top:10px" class="col-md-3 col-md-offset-1 wow bounceInUp">
+						<a href="resume/Resume_9-1-15.pdf" class="btn btn-default btn-custom-2" download><i class="fa fa-cloud-download icon-before"></i> Download PDF</a>
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Resume section end -->
+
+		<!-- Callout section start -->
+
+		<section id="clients" class="callout">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-3 hidden-xs wow bounceInLeft">
+						<h3>Customers</h3>
+					</div>
+
+					<div class="col-md-9 wow bounceInRight">
+
+						<div id="owl-clients" class="owl-carousel">
+							
+							<div class="owl-item">
+								<img src="assets/images/logo/client160-3.png" alt="">
+								<h4>Client 1</h4>
+							</div>
+
+							<div class="owl-item">
+								<img src="assets/images/logo/client160-1.png" alt="">
+								<h4>Client 2</h4>
+							</div>
+
+							<div class="owl-item">
+								<img src="assets/images/logo/client160-3.png" alt="">
+								<h4>Client 3</h4>
+							</div>
+
+							<div class="owl-item">
+								<img src="assets/images/logo/client160-1.png" alt="">
+								<h4>Client 4</h4>
+							</div>
+
+							<div class="owl-item">
+								<img src="assets/images/logo/client160-3.png" alt="">
+								<h4>Client 5</h4>
+							</div>
+
+							<div class="owl-item">
+								<img src="assets/images/logo/client160-1.png" alt="">
+								<h4>Client 6</h4>
+							</div>
+
+						</div>
+
+					</div><!-- .col-md-9 -->
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Callout section end -->
+
+		<!-- Portfolio section start -->
+
+		<section id="portfolio" class="section">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 headline wow bounceInDown">
+						<h2>Portfolio</h2>
+						<p>My best works.</p>
+					</div>
+
+					<div class="col-md-4 col-sm-6 wow bounceInLeft">
+						<a href="toboboto.github.io/smackDown" class="pop-up" title="Caption 1">
+							<div class="portfolio-item">
+								<div class="portfolio-item-preview">
+									<img src="assets/images/p1.jpg" alt="">
+								</div>
+								<div class="portfolio-item-description">
+									<h3>Music Project</h3>
+									<p>Hackathon</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 wow bounceInUp">
+						<a href="https://vimeo.com/45830194" class="video-pop-up" title="Caption 2">
+							<div class="portfolio-item">
+								<div class="portfolio-item-preview">
+									<img src="assets/images/p2.jpg" alt="">
+								</div>
+								<div class="portfolio-item-description">
+									<h3>Some work</h3>
+									<p>Category</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 wow bounceInRight">
+						<a href="assets/images/p3.jpg" class="pop-up" title="Caption 3">
+							<div class="portfolio-item">
+								<div class="portfolio-item-preview">
+									<img src="assets/images/p3.jpg" alt="">
+								</div>
+								<div class="portfolio-item-description">
+									<h3>Some work</h3>
+									<p>Category</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".2s">
+						<a href="assets/images/p5.jpg" class="pop-up" title="Caption 4">
+							<div class="portfolio-item">
+								<div class="portfolio-item-preview">
+									<img src="assets/images/p5.jpg" alt="">
+								</div>
+								<div class="portfolio-item-description">
+									<h3>Some work</h3>
+									<p>Category</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".4s">
+						<a href="assets/images/p8.jpg" class="pop-up" title="Caption 5">
+							<div class="portfolio-item">
+								<div class="portfolio-item-preview">	
+									<img src="assets/images/p8.jpg" alt="">
+								</div>
+								<div class="portfolio-item-description">
+									<h3>Some work</h3>
+									<p>Category</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".6s">
+						<a href="assets/images/p6.jpg" class="pop-up" title="Caption 6">
+							<div class="portfolio-item">
+								<div class="portfolio-item-preview">
+									<img src="assets/images/p6.jpg" alt="">
+								</div>
+								<div class="portfolio-item-description">
+									<h3>Some work</h3>
+									<p>Category</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Portfolio section end -->
+
+		<!-- Contact section start -->
+
+		<section id="contact" class="section">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12 headline wow bounceInLeft">
+						<h2>Contact Me</h2>
+						<p>Drop me a line or give me a ring. I would love to talk to you.</p>
+					</div>
+
+					<div class="col-md-6 wow bounceInUp">
+
+						<p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+
+						<ul class="icon-list">
+							<li><i class="fa fa-fw fa-map-marker"></i>3008 Sequoia Ave, Fullerton, CA 92835</li>
+							<li><i class="fa fa-fw fa-phone"></i>714 306 2028</li>
+							<li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:jmekstrom@gmail.com">jmekstrom@gmail.com</a></li>
+							<li><i class="fa fa-fw fa-globe"></i><a href="">http://www.jasonekstrom.com</a></li>
+						</ul>
+
+					</div>
+
+					<div class="col-md-6 wow bounceInRight">
+
+						<form id="contact-form" role="form">
+
+							<div class="form-group">
+								<label class="sr-only" for="c_name">Name</label>
+								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+							</div>
+
+							<div class="form-group">
+								<label class="sr-only" for="c_email">Email address</label>
+								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+							</div>
+
+							<div class="form-group">
+								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message"></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-custom-1">
+								<i class="fa fa-bullhorn icon-before"></i> Send it
+							</button>
+
+						</form>
+
+						<div class="ajax-response"></div>
+
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</section>
+
+		<!-- Contact section end -->
+
+		<!-- Footer start -->
+
+		<footer id="footer">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-12">
+						<p class="copy">
+							© 2015 Jason Ekstrom, All Rights Reserved.
+						</p>
+					</div>
+
+				</div><!-- .row -->
+
+			</div><!-- .container -->
+
+		</footer>
+
+		<!-- Footer end -->
+
+	</div><!-- .wrapper -->
+
+	<!-- Javascript files -->
+	<!-- jQuery -->
+	<script src="assets/js/jquery-1.11.0.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Background slider -->
+	<script src="assets/js/jquery.backstretch.min.js"></script>
+	<!-- OwlCarousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- Modal for portfolio -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Text rotator -->
+	<script src="assets/js/jquery.simple-text-rotator.min.js"></script>
+	<!-- Waypoints -->
+	<script src="assets/js/jquery.waypoints.js"></script>
+	<!-- CountTo  -->
+	<script src="assets/js/jquery.countTo.js"></script>
+	<!-- WOW - Reveal Animations When You Scroll -->
+	<script src="assets/js/wow.min.js"></script>   
+	<!-- Smooth scroll -->
+	<script src="assets/js/smoothscroll.js"></script>
+	<!-- Fitvids -->
+	<script src="assets/js/jquery.fitvids.js"></script>
+	<!-- Custom scripts -->
+	<script src="assets/js/custom.js"></script>
 
 </body>
-
 </html>
