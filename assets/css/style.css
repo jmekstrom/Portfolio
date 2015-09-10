@@ -760,4 +760,7 @@ h3 > .fa {
 
 }
 
-
+.no_over{
+	overflow: hidden;
+	height: 230px;
+}
