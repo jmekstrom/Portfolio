@@ -1,7 +1,7 @@
 <?php
 
 	// Contact
-	$to = 'jmekstrom@gmail.com';
+	$to = 'jasonekstromdev@gmail.com';
     $subject = 'Job Opportunity';
 
 	if(isset($_POST['c_name']) && isset($_POST['c_email']) && isset($_POST['c_message'])){
